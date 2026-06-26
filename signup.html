@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup - Virtual Classroom</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family:Arial;
+            background:linear-gradient(135deg,#2563eb,#1f2937);
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .box{
+            background:white;
+            padding:35px;
+            border-radius:15px;
+            width:340px;
+            box-shadow:0 10px 30px rgba(0,0,0,0.3);
+            text-align:center;
+        }
+
+        h2{
+            margin-bottom:15px;
+        }
+
+        input, select{
+            width:100%;
+            padding:10px;
+            margin:8px 0;
+            border:1px solid #ccc;
+            border-radius:8px;
+        }
+
+        button{
+            width:100%;
+            padding:10px;
+            background:#2563eb;
+            color:white;
+            border:none;
+            border-radius:8px;
+            font-weight:bold;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        button:hover{
+            background:#1d4ed8;
+        }
+
+        a{
+            display:block;
+            margin-top:10px;
+            color:#2563eb;
+            text-decoration:none;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+    <h2>🎓 Create Account</h2>
+
+    <form method="POST">
+
+        <input type="text" name="name" placeholder="Full Name" required>
+
+        <input type="email" name="email" placeholder="Email" required>
+
+        <input type="password" name="password" placeholder="Password" required>
+
+        <select name="role" required>
+            <option value="">Select Role</option>
+            <option value="Student">Student</option>
+            <option value="Teacher">Teacher</option>
+        </select>
+
+        <input type="text" name="branch" placeholder="Branch (EEE/CSE/etc)" required>
+
+        <input type="text" name="year" placeholder="Year (1st/2nd/3rd/4th)" required>
+
+        <button type="submit">Signup</button>
+
+    </form>
+
+    <a href="/login">Already have an account? Login</a>
+</div>
+
+</body>
+</html>
