@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Videos</title>
+</head>
+<body>
+
+<h1>Available Videos</h1>
+
+{% for video in videos %}
+
+<h3>{{ video[1] }}</h3>
+
+<video width="600" controls>
+    <source src="/uploads/videos/{{ video[2] }}" type="video/mp4">
+</video>
+
+<hr>
+
+{% endfor %}
+
+</body>
+</html>
